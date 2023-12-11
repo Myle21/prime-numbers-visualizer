@@ -1,0 +1,39 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Prime numbers visualiser"
+run/main_scene="res://prime.tscn"
+config/features=PackedStringArray("4.2", "C#", "Forward Plus")
+config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=7680
+window/size/viewport_height=4320
+window/size/mode=3
+window/size/resizable=false
+window/size/borderless=true
+
+[dotnet]
+
+project/assembly_name="Prime numbers visualiser"
+
+[rendering]
+
+environment/defaults/default_clear_color=Color(0.00784314, 0, 0.0666667, 1)
+
+[shader_globals]
+
+scale={
+"type": "vec2",
+"value": Vector2(1, 1)
+}

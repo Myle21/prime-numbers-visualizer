@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=3 uid="uid://k5mhup1vc48m"]
+
+[ext_resource type="Script" path="res://number.cs" id="1_xbt05"]
+[ext_resource type="Shader" path="res://number.gdshader" id="2_u40xo"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_tfi15"]
+shader = ExtResource("2_u40xo")
+shader_parameter/color = Color(0.784314, 0.784314, 1, 1)
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_75ifu"]
+size = Vector2(32, 32)
+
+[node name="Number" type="Node2D"]
+script = ExtResource("1_xbt05")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_tfi15")
+texture = SubResource("PlaceholderTexture2D_75ifu")
